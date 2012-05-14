@@ -1,0 +1,24 @@
+
+O WebQSTAT e um script Korn Shell que mostra informacoes recuperadas dos servidores do Tupa em uma pagina HTML com graficos e tabelas ordenadas.
+
+Para executar, deve-se atender os seguintes requisitos:
+
+1) Ter uma chave publica entre o localhost e o Tupa
+2) Ter uma servidor Web Apache instalado no localhost
+
+Para executar o script monta_index.ksh, basta fazer:
+
+1) Colocar esta pasta dentro de /var/www do localhost
+2) Revisar o script monta_index.ksh e alterar as seguintes variaveis:
+host (variavel: nome da maquina alvo - tupa)
+usuario_host (variavel: nome do usuario que ira acessar o host)
+monitor_tmp (variavel: nome da pasta temporaria em que os arquivos finais serao criados)
+grupo (variavel: nome do grupo de interesse)
+Servidores (vetor: adicionar ou remover os servidores de interesse)
+3) Executar o script monta_index.ksh
+$ ./monta_index.ksh
+
+Como saida, o script cria a pasta temporaria o arquivo index.html com as informacoes que foram recuperadas. Para visualizacao, basta abrir no navegador.
+
+Ultima atualizacao: carlos.frederico@cptec.inpe.br (14/05/2012)
+
